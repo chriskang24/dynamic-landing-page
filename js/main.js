@@ -69,11 +69,11 @@ function getName() {
 
 function setName(e) {
   if (e.type === 'keypress') {
-     // Make sure key is pressed
-     if (e.which == 13 || e.keyCode == 13) {
-       localStorage.setItem('name', e.target.innerText);
-       name.blur();
-     }
+    // Make sure key is pressed
+    if (e.which == 13 || e.keyCode == 13) {
+      localStorage.setItem('name', e.target.innerText);
+      name.blur();
+    }
   } else {
     localStorage.setItem('name', e.target.innerText);
   }
@@ -92,11 +92,11 @@ function getFocus() {
 
 function setFocus(e) {
   if (e.type === 'keypress') {
-     // Make sure key is pressed
-     if (e.which == 13 || e.keyCode == 13) {
-       localStorage.setItem('focus', e.target.innerText);
-       focus.blur();
-     }
+    // Make sure key is pressed
+    if (e.which == 13 || e.keyCode == 13) {
+      localStorage.setItem('focus', e.target.innerText);
+      focus.blur();
+    }
   } else {
     localStorage.setItem('focus', e.target.innerText);
   }
